@@ -1,12 +1,21 @@
 
-//SNACK 1
 
-let tavoloVip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
+let vip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
 
+
+
+let tavoloVip = vip.map ((element, index) =>{
+    
+    return{
+        guestName : element,
+        place : index + 1
+    }
+})
+console.log (tavoloVip)
 
 //SNACK 2
 
-let studenti = [
+/*let studenti = [
     
     {
         Id : '213',
@@ -52,11 +61,6 @@ let studenti = [
 
 ]
 console.log(studenti)
-/*Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
-1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
-ES (Marco della Rovere => MARCO DELLA ROVERE);
-2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
-3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120*/
 
 //PUNTO 1
 let nomeStudenti = studenti. map ((element) => {
@@ -76,4 +80,4 @@ console.log(lista)
 let listaStudenti = studenti. filter ((element) =>{
     return element.Grades > 70 && element.Id > 120;
 })
-console.log (listaStudenti)
+console.log (listaStudenti)*/
