@@ -65,3 +65,10 @@ let lista = studenti.filter ((element) =>{
     return element.Grades > 70;
 })
 console.log(lista)
+
+//PUNTO 3
+
+let listaStudenti = studenti. filter ((element) =>{
+    return element.Grades > 70 && element.Id > 120;
+})
+console.log (listaStudenti)
