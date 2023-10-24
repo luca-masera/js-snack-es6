@@ -58,6 +58,11 @@ ES (Marco della Rovere => MARCO DELLA ROVERE);
 2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
 3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120*/
 
+//PUNTO 1
+let nomeStudenti = studenti. map ((element) => {
+    return element.Name.toUpperCase ()
+})
+console.log (nomeStudenti)
 
 //PUNTO 2
 
