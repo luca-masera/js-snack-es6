@@ -7,6 +7,7 @@ let vip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgi
 let tavoloVip = vip.map ((element, index) =>{
     
     return{
+        tableName : 'TavoloVip',
         guestName : element,
         place : index + 1
     }
