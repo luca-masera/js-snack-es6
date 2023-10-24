@@ -1,6 +1,6 @@
 
 
-esercizio di oggi: 24/10/2024 Snack Array Methods
+<!--esercizio di oggi: 24/10/2024 Snack Array Methods
 repo: js-snack-es6
 
 
@@ -30,4 +30,4 @@ Id  Name                Grades
 145 Gaia Borromini          74
 196 Luigi Grimaldello       68
 102 Piero della Francesca   50
-120 Francesca da Polenta    84
+120 Francesca da Polenta    84 -->
