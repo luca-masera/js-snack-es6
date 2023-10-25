@@ -84,3 +84,40 @@ let listaStudenti = studenti. filter ((element) =>{
     return element.Grades > 70 && element.Id > 120;
 })
 console.log (listaStudenti)*/
+
+// SNACK 3
+/*Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare in console la bici con peso minore utilizzando destructuring e template literal*/
+
+let bici = [
+    
+    {
+        name :'scott',
+        peso : '20 kg'
+    },
+    {
+        name :'decathlon',
+        peso : '10 kg'
+    },
+    {
+        name :'ktm',
+        peso : '15 kg'
+    },
+    {
+        name :'cube',
+        peso : '30 kg'
+    }
+]
+let pesoBici = '15 kg'
+
+const pesoMinore= bici.filter ((element) =>{
+       
+
+    return element.peso < pesoBici
+})
+console.log(pesoMinore)
+
+let html = document.getElementById('scrittura');
+html.innerHTML = pesoMinore
+{}
