@@ -165,13 +165,16 @@ let squadreCalcio = [
 
 
 
-let nuovoArray = squadreCalcio.filter((element) => {
-
+let nuovoArray = squadreCalcio.map ((element, index) =>{
     
-    return element.puntiFatti === getRndInteger(1, 10) && element.falliSubiti === getRndInteger(1, 10);
-
+    return{
+        nome: element.nome,
+        puntiFatti : getRndInteger (1, 16),
+        falliSubiti : getRndInteger (1, 16)
+    }
 })
-console.log(nuovoArray);
+console.log (nuovoArray);
+
 
 
 function getRndInteger(min, max) {
