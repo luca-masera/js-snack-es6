@@ -94,33 +94,36 @@ let bici = [
     
     {
         name :'scott',
-        peso : '20 kg'
+        peso : '20'
     },
     {
         name :'decathlon',
-        peso : '10 kg'
+        peso : '10'
     },
     {
         name :'ktm',
-        peso : '15 kg'
+        peso : '15'
     },
     {
         name :'cube',
-        peso : '30 kg'
+        peso : '30'
     }
 ]
-let pesoBici = '15 kg'
 
 
+let pesoMinore = bici[0];
 
-const pesoMinore= bici.filter ((element) =>{
-       
-      return element.peso < pesoBici
+bici.forEach ((element, index) => {
     
-})
-console.log(pesoMinore)
+    if (bici [index].peso < pesoMinore.peso) {
+        pesoMinore = bici[index];
+    }
+
+});
+
+
 const{ name, peso } = pesoMinore;
-console.log( name, peso)
+
 
 
 let html = document.getElementById('scrittura');
@@ -161,3 +164,11 @@ let squadreCalcio = [
         falliSubiti : 0
     }
 ]
+
+
+
+
+function getRndInteger(min,max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;   
+            
+}
