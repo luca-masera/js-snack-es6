@@ -1,6 +1,7 @@
 
+//SNACK 1
 
-let vip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
+/*let vip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
 
 
 
@@ -12,7 +13,8 @@ let tavoloVip = vip.map ((element, index) =>{
         place : index + 1
     }
 })
-console.log (tavoloVip)
+console.log (tavoloVip)*/
+
 
 //SNACK 2
 
