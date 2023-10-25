@@ -86,11 +86,9 @@ let listaStudenti = studenti. filter ((element) =>{
 console.log (listaStudenti)*/
 
 // SNACK 3
-/*Creare un array di oggetti:
-Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
-Stampare in console la bici con peso minore utilizzando destructuring e template literal*/
 
-let bici = [
+
+/*let bici = [
     
     {
         name :'scott',
@@ -127,7 +125,7 @@ const{ name, peso } = pesoMinore;
 
 
 let html = document.getElementById('scrittura');
-html.innerHTML = ` La bici ${name} è la più leggera di tutte con un peso di ${peso}`;
+html.innerHTML = ` La bici ${name} è la più leggera di tutte con un peso di ${peso}`;*/
 
 /*SNACK 4
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
@@ -137,38 +135,46 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 
 
 let squadreCalcio = [
-    
+
     {
         nome: 'Juventus',
-        puntiFatti : 0,
-        falliSubiti : 0
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
         nome: 'Inter',
-        puntiFatti : 0,
-        falliSubiti : 0
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
         nome: 'Milan',
-        puntiFatti : 0,
-        falliSubiti : 0
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
         nome: 'Sassuolo',
-        puntiFatti : 0,
-        falliSubiti : 0
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
         nome: 'Napoli',
-        puntiFatti : 0,
-        falliSubiti : 0
+        puntiFatti: 0,
+        falliSubiti: 0
     }
 ]
 
 
 
+let nuovoArray = squadreCalcio.filter((element) => {
 
-function getRndInteger(min,max){
-    return Math.floor(Math.random() * (max - min + 1)) + min;   
-            
+    
+    return element.puntiFatti === getRndInteger(1, 10) && element.falliSubiti === getRndInteger(1, 10);
+
+})
+console.log(nuovoArray);
+
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+
 }
