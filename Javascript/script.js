@@ -113,13 +113,14 @@ let pesoBici = '15 kg'
 
 const pesoMinore= bici.filter ((element) =>{
        
-      
+      return element.peso < pesoBici
     
 })
-const{nome, peso} = pesoMinore;
 console.log(pesoMinore)
 
-let html = document.getElementById('scrittura');
-html.innerHTML = `${nome}${peso}`
+const{ name, peso } = pesoMinore;
 
-{}
+
+let html = document.getElementById('scrittura');
+html.innerHTML = ` La bici ${name} è la più leggera di tutte con un peso di ${peso}`;
+
